@@ -37,10 +37,6 @@ const checkCarPayload = async (req, res, next) => {
         message: `mileage is missing`
       })
     }else{
-      // req.vin =vin;
-      // req.make = make;
-      // req.model = model;
-      // req.mileage = mileage;
       next();
     }
   }catch(err){
